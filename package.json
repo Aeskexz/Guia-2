@@ -1,0 +1,7 @@
+{
+  "name": "guia-2-dsm-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix ./guia-2-ejercicio-2/equipo-futbol run dev"
+  }
+}

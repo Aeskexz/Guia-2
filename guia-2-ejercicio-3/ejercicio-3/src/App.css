@@ -111,10 +111,22 @@ button.secondary:hover {
   margin-top: 1rem;
   padding: 0.75rem;
   border-radius: 8px;
-  background-color: #ecfeff;
-  color: #0369a1;
   font-weight: 700;
   text-align: center;
+  white-space: pre-line; /* permite \n en mensajes */
+  border: 1px solid transparent;
+}
+
+.resultado.ok {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border-color: #bbf7d0;
+}
+
+.resultado.error {
+  background-color: #fff1f2;
+  color: #881337;
+  border-color: #fecaca;
 }
 
 /* ===========================================================

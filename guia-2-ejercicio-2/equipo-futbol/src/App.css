@@ -120,6 +120,18 @@ button.secondary:hover {
 /* ===========================================================
    ✅ FUTBOL (se mantiene)
 =========================================================== */
+.player {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.player-img {
+  width: 120px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 8px;
+}
+
 .containerList {
   margin-top: 1rem;
 }
