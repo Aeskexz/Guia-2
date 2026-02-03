@@ -1,0 +1,97 @@
+:root {
+  --bg: linear-gradient(180deg,#0f1720,#081018);
+  --card-bg: rgba(255,255,255,0.03);
+  --accent: #6b8cff;
+  --muted: #888;
+}
+
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, rgba(107,140,255,0.08), rgba(97,218,251,0.04));
+  border-radius: 12px;
+}
+
+.hero-inner {
+  max-width: 900px;
+  width: 100%;
+}
+
+.hero-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.nav button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.nav button.active {
+  background: var(--accent);
+  color: white;
+  border-color: transparent;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.counter {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 1rem;
+}
+
+.counter-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.counter-buttons { display:flex; gap: 1rem; }
+
+.counter button { padding: 0.6rem 1rem; border-radius:8px; border:none; cursor:pointer; }
+.counter .decrement { background: #ff6b6b; color:white }
+.counter .increment { background: #4caf50; color:white }
+
+/* Converter styles */
+.converter { text-align:center }
+.converter h2 { margin: 0 0 0.75rem }
+.converter-row { display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; align-items:flex-end; margin-bottom:1rem }
+.converter-label { display:flex; flex-direction:column; gap:0.5rem; }
+.converter-input, .converter-select { padding:0.6rem 0.8rem; border-radius:8px; border:1px solid rgba(255,255,255,0.06); background: rgba(0,0,0,0.12); color:inherit; min-width:160px }
+.converter-result { font-weight:700; color:#fff; background: rgba(255,255,255,0.02); padding:0.6rem 1rem; border-radius:8px; display:inline-block; min-width:220px }
+
+.footer { margin-top: 1.5rem; color: var(--muted); }
